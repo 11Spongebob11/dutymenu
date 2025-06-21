@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duty Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="duty-container">
+        <h1>Duty Selection</h1>
+        
+        <label for="department">Choose your department</label>
+        <select id="department">
+            <option value="SASP">San Andreas State Troopers</option>
+            <option value="BCSO">Blaine County Sheriff's Office</option>
+            <option value="LSPD">Los Santos Police Department</option>
+        </select>
+
+        <label for="playerName">Enter your name (e.g. Max C.) <span class="required">*</span></label>
+        <input type="text" id="playerName" placeholder="Enter your name">
+
+        <label for="callsign">Enter your callsign (e.g. 1S-01/101) <span class="required">*</span></label>
+        <input type="text" id="callsign" placeholder="Enter your callsign">
+
+        <div class="buttons">
+            <button class="cancel-btn" onclick="closeMenu()">CANCEL</button>
+            <button class="confirm-btn" onclick="confirmDuty()">CONFIRM</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
